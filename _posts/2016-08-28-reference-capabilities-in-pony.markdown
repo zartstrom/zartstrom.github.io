@@ -8,7 +8,7 @@ categories: pony
 This post is about illustrating reference capabilities in the Pony programming language. The [Pony homepage](http://www.ponylang.org) states:
 "Pony is an open-source, object-oriented, actor-model, __capabilities-secure__, high performance programming language."
 
-Reference capabilities achieve this capabilities security and therefore constitute an essential part of the Pony programming language.
+Reference capabilities achieve this capabilities security and hence constitute an essential part of the Pony programming language.
 
 Now, that said, what was the reason to introduce the concept of reference capabilities in the first place?
 Reference capabilities are a means to
@@ -17,7 +17,7 @@ Reference capabilities are a means to
 * avoid race conditions and
 * check this at compile time.
 
-This post should give you a feeling what reference capabilities are, and after reading - more specifically - you should understand:
+This post should give you a better feeling what reference capabilities are, and after reading you should understand:
 
 * In what sense reference capabilities form a type hierarchy
 * What guarantees every reference capability gives
