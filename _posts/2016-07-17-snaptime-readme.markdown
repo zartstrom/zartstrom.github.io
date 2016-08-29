@@ -5,6 +5,8 @@ date:   2016-07-16 17:40:30 +0200
 categories: python
 ---
 
+This is the README of my [python package snaptime](https://pypi.python.org/pypi/snaptime). The github repo is [here](https://github.com/zartstrom/snaptime). I wanted to view the html markdown generates, so I put it here..
+
 ### snaptime
 
 The snaptime package is about transforming timestamps in a simple manner.

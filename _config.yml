@@ -15,6 +15,9 @@ url: "http://zartstrom.github.io" # the base hostname & protocol for your site
 twitter_username: resilientphil
 github_username:  zartstrom
 
+gems:
+  - jekyll-sitemap
+
 # Build settings
 markdown: kramdown
 future: true
