@@ -5,6 +5,8 @@ date:   2016-08-28 19:10:10 +0200
 categories: pony
 ---
 
+*Updated Aug 30, 2016*
+
 This post is about illustrating reference capabilities in the Pony programming language. The [Pony homepage](http://www.ponylang.org) states:
 "Pony is an open-source, object-oriented, actor-model, __capabilities-secure__, high performance programming language."
 
@@ -29,7 +31,7 @@ Prerequisites: Maybe playing around some minutes with Pony code from the [tutori
 
 Every reference to an object in Pony exists within an actor.
 There can be one or more references pointing to the same object in memory and those references may be distributed arbitrarily over any number of actors.
-This is how I think about references to objects in Pony:
+This is picture depicts some __references__ `a`, `b`, `c`, … pointing to some objects in memory.
 
 ![refs_to_objects_in_actors](/assets/images/refs_to_objects_in_actors.svg)
 
@@ -101,7 +103,7 @@ This picture gives a complete overview over the features of every of the six ref
 Further random notes:
 
 * An actor is always opaque to other actors, therefore a variable with reference to an actor must have the __tag__ reference capability.
-* The __trn__ capability is hardly ever used in code, it is safe to forget about __trn__ completely. In the current [standard library](https://github.com/ponylang/ponyc/tree/master/packages) there is only one usage, namely in the file [net/_test.pony](https://github.com/ponylang/ponyc/blob/master/packages/net/_test.pony).
+* The __trn__ capability is seldomly used in code. Nevertheless there are good usescases for __trn__.
 * A box reference allows a local alias with write permission and a global alias with read permission. In fact only one of the two aliases (local write / global read) can exist for a box reference at a given moment. Can you imagine why? Pony takes care that this does not happen, i.e. look for what are sendable objects in the [Pony tutorial][pony_tutorial].
 
 [pony_tutorial]: http://tutorial.ponylang.org
